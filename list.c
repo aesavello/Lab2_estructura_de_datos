@@ -32,7 +32,12 @@ Node * createNode(void * data) {
 // Recuerda reservar memoria al puntero usando malloc o calloc.
 
 List * createList() {
-     return NULL;
+    List * list = (List*)malloc(sizeof(List));
+    list->head = NULL;
+    list->tail = NULL;
+    list->current = NULL;
+    
+    return list;
 }
 
 // 2. Programe las funciones void * firstList(List * list) y void * nextList(List * list).
@@ -89,7 +94,12 @@ void * popBack(List * list) {
 // Nota: El current debe quedar apuntando al nodo siguiente del eliminado.
 
 void * popCurrent(List * list) {
-    return NULL;
+    void dato = list->current->data;
+    list->current->next->prev = list->current->prev;
+    list->current->prev = list->current->next;
+    list->current = list->current->next;
+    
+    return dato;
 }
 
 void cleanList(List * list) {
