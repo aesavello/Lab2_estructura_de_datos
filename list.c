@@ -52,7 +52,7 @@ void * firstList(List * list) {
 }
 
 void * nextList(List * list) {
-    if(list->current->next == NULL || list->current->next->data == NULL || list->current == NULL){
+    if(list->current == NULL || list->current->next == NULL){
         return NULL;
     } 
     void* dato = list->current->next->data;
