@@ -109,15 +109,8 @@ void * popCurrent(List * list) {
         return dato;
     }
 
-
     list->current->next->prev = list->current->prev;
     list->current->prev = list->current->next;
-    if(list->current==list->head){
-        list->head = list->current->next;
-    }
-    if(list->current == list->tail){
-        list->tail = list->current->prev;
-    }
     
     list->current = list->current->next;
     return dato;
