@@ -105,3 +105,16 @@ Thu Mar 26 07:52:45 PM UTC 2026:
  1 file changed, 3 insertions(+), 1 deletion(-)
  tests:  0|0
 552a777
+Thu Mar 26 07:55:08 PM UTC 2026: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:48:28: error: ‘return’ with no value, in function returning non-void [-Wreturn-mismatch]
+   48 |     if(list->head == NULL) return;
+      |                            ^~~~~~
+list.c:47:8: note: declared here
+   47 | void * firstList(List * list) {
+      |        ^~~~~~~~~
+c9d2772
