@@ -172,3 +172,14 @@ Thu Mar 26 08:03:19 PM UTC 2026:
  tests:  6|3
 total_score: 30/60
 1ce55f1
+Thu Mar 26 08:05:46 PM UTC 2026: 
+ list.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘prevList’:
+list.c:77:12: error: unused variable ‘dato’ [-Werror=unused-variable]
+   77 |     void * dato = list->current->prev->data;
+      |            ^~~~
+cc1: all warnings being treated as errors
+93918e5
