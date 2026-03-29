@@ -210,3 +210,17 @@ Sun Mar 29 09:47:57 PM UTC 2026:
  tests:  10|2
 total_score: 40/60
 a849306
+Sun Mar 29 09:51:34 PM UTC 2026: 
+ list.c | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:93:25: error: expected ‘;’ before ‘}’ token
+   93 |     list->head = newNode
+      |                         ^
+      |                         ;
+   94 | 
+   95 | }
+      | ~                        
+9a69b2a
