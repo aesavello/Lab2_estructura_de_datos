@@ -204,3 +204,9 @@ list.c:77:12: error: unused variable ‘dato’ [-Werror=unused-variable]
       |            ^~~~
 cc1: all warnings being treated as errors
 cd319b4
+Sun Mar 29 09:47:57 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  10|2
+total_score: 40/60
+a849306
